@@ -77,8 +77,8 @@ def interpolate(
     in_data: pd.DataFrame, proj, interp_type="natural_neighbor", hres=10000
 ):
     x, y, data = (
-        in_data.LONGITUDE_GDA2020_x.values,
-        in_data.LATITUDE_GDA2020_x.values,
+        in_data.LONGITUDE_GDA2020.values,
+        in_data.LATITUDE_GDA2020.values,
         in_data.times_ave_crustal_abund.values,
     )
     xp, yp, _ = proj.transform_points(ccrs.Geodetic(), x, y).T
