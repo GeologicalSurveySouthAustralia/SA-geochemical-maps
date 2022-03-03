@@ -1,0 +1,7 @@
+dask
+pandas
+numpy
+matplotlib
+seaborn
+cartopy
+metpy
